@@ -1,3 +1,41 @@
 page-home {
 
+    img {
+        width: 100%;
+    }
+
+    div {
+        background-color: #4993cf;
+    }
+
+    .item-md {
+        padding-left: 0;
+        margin-left: 16px;
+        width: 90%;
+        border: 2px;
+    }
+
+    #SearchBar {
+        background-color: rgba(0,0,0,0);
+        margin-top: -35px;
+    }
+
+    .HeaderList {
+        background-color: #0b66ad;   
+    }
+
+    .card-content-md{
+        padding: 2px 16px;
+    }
+
+    .HeaderListWord {
+        color: white;
+        font-size: 3vh;
+    }
+
+    .ContentListWord{
+        color: white;
+        font-size: 3vh;
+    }
+
 }

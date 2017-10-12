@@ -1,0 +1,35 @@
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>welcome</ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content class="background" padding>
+
+  <ion-slides pager>
+
+    <ion-slide>
+      <img *ngIf="image1" [src]="image1">
+      <img *ngIf="!image1" src="assets/pict/splash.png"/>
+    </ion-slide>
+
+    <ion-slide>
+      <img *ngIf="image2" [src]="image2">
+      <img *ngIf="!image2" src="assets/pict/splash.png"/>
+    </ion-slide>
+
+    <ion-slide>
+      <img *ngIf="image3" [src]="image3">
+      <img *ngIf="!image3" src="assets/pict/splash.png"/>
+    </ion-slide>
+
+  </ion-slides>
+
+  <div text-center>
+    <button class='ButtonLewati' ion-button clear (click)='Skip()'><p class="ButtonWordBlack">Lewati</p></button>
+  </div>
+
+</ion-content>

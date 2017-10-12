@@ -1,6 +1,6 @@
 {
   "name": "tkipedia",
-  "app_id": "",
+  "app_id": "tkipedia1",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
