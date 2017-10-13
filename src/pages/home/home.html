@@ -12,24 +12,45 @@
   <img src="assets/pict/home.png" />
 
   <div id="SearchBar">
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Ketik di sini"></ion-searchbar>
   </div>
 
-  <ion-card class="HeaderList">
-    <ion-card-content>
-      <p class="HeaderListWord">A</p>
-    </ion-card-content>
-  </ion-card>
-  <ion-list text-wrap>
-    <ion-item>
-      <p class="ContentListWord">Administrasi Kependudukan</p>
-    </ion-item>
-    <ion-item>
-      <p class="ContentListWord">Advokasi TKI</p>
-    </ion-item>
-    <ion-item>
-      <p class="ContentListWord">Ancaman Kekerasan Terhadap TKIAncaman Kekerasan Terhadap TKIAncaman Kekerasan Terhadap TKIAncaman Kekerasan Terhadap TKI</p>
-    </ion-item>
-  </ion-list>
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">A</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list text-wrap class="ContentList">
+      <ion-item>
+        <p class="ContentListWord">Administrasi Kependudukan</p>
+      </ion-item>
+      <ion-item>
+        <p class="ContentListWord">Advokasi TKI</p>
+      </ion-item>
+      <ion-item>
+        <p class="ContentListWord">Ancaman Kekerasan Terhadap TKI</p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">B</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list text-wrap class="ContentList">
+      <ion-item>
+        <p class="ContentListWord">Bantuan Hukum</p>
+      </ion-item>
+      <ion-item>
+        <p class="ContentListWord">Biaya Penempatan</p>
+      </ion-item>
+      <ion-item>
+        <p class="ContentListWord">Biaya Rekrut TKI</p>
+      </ion-item>
+    </ion-list>
+  </div>
 
 </ion-content>

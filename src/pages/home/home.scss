@@ -33,9 +33,19 @@ page-home {
         font-size: 3vh;
     }
 
+    .ContentList{
+        position: relative;
+        left: 3vw;  
+    }
+
     .ContentListWord{
         color: white;
         font-size: 3vh;
+    }
+
+
+    .searchbar-search-icon{
+        background-color: rgba(0,0,0,0);
     }
 
 }
