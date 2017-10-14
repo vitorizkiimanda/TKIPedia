@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 
-@IonicPage()
+
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html',
