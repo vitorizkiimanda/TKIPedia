@@ -1,0 +1,25 @@
+//method GET
+//endpoint http://xxxx/api/get/id
+//contoh http://xxxx/api/get/1
+
+{
+    "Data":[
+        {
+            "Id":"1",
+            "Title":"Administrasi Kependudukan",
+            "Date":"14-02-2016",
+            "Category":"Help",
+            "Description":"Lorem ipsum dolor amet. Madagasakar Afrika.",
+            "File":[
+                {
+                    "Link":" http://xxxx/file1.jpeg"
+                },
+                {
+                    "Link":" http://xxxx/file2.jpeg"
+                }
+            ],
+            "CreatedBy":"Admin"
+
+        }
+    ]
+}

@@ -14,3 +14,35 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.MenuColor{
+    background-color: #0d65ac;
+}
+
+.MenuTitle {
+    height: 20vh;
+    text-align: center;
+}
+
+.MenuContent {
+    position: relative;
+    bottom: 20vh;
+}
+
+.MenuTitleFont {
+    font-size: 9vw;
+    font-weight: 400;
+}
+
+.MenuColorContent {
+    align-items: center;
+    background-color: #0d65ac;
+    margin: 0 5% 0 5%;
+
+    width: 85%;
+
+    //font
+    color: white;
+    font-size: 5vw;
+    font-weight: 400;
+}

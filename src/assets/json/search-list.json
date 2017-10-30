@@ -1,0 +1,25 @@
+//method GET
+//endpoint http://xxxx/api/searchlist?title=A
+
+{
+    "Data":[
+        {
+            "Id":"1",
+            "Title":"Administrasi Kependudukan",
+            "Date":"14-02-2016",
+            "Category":"Help"            
+        },
+        {
+            "Id":"2",
+            "Title":"Advokasi TKI",
+            "Date":"14-02-2016",
+            "Category":"Help"            
+        },
+        {
+            "Id":"3",
+            "Title":"Ancaman Kekerasan Pada TKI",
+            "Date":"14-02-2016",
+            "Category":"Help"            
+        }
+    ]
+}
