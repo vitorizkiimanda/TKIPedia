@@ -1,6 +1,3 @@
-//method GET
-//endpoint http://xxxx/api/searchlist?title=A
-
 {
     "Data":[
         {

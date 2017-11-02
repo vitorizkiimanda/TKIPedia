@@ -18,7 +18,7 @@ export class HomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
-    // this.getData();
+    this.getData();
   }
 
   Content() {
@@ -26,12 +26,13 @@ export class HomePage {
   }
 
   getData() {
-    this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/search-list.json').subscribe((Data) => {
-       console.log(Data);
+    this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/search-list.json').subscribe((data) => {
+       console.log("masuk");
+       console.log(data.json());
     });
 
-    // this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/search-list.json').subscribe(Data => {
-    //   let response = Data.json();
+    // this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/search-list.json').subscribe(data => {
+    //   let response = data.json();
     //   console.log(response);
     // });
 
