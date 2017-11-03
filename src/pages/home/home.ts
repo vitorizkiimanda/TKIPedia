@@ -10,6 +10,8 @@ import { ContentPage } from '../content/content';
 })
 export class HomePage {
 
+  list: any;
+
   constructor(
     public navCtrl: NavController,
     public http: Http) {
@@ -26,9 +28,10 @@ export class HomePage {
   }
 
   getData() {
-    this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/search-list.json').subscribe((data) => {
-       console.log("masuk");
-       console.log(data.json());
+    this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/list-tkipedia.json').subscribe((data) => {
+       let response = data.json();
+       this.list = response.Data;
+       console.log(this.list);
     });
 
     // this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/search-list.json').subscribe(data => {

@@ -21,17 +21,11 @@
         <p class="HeaderListWord">A</p>
       </ion-card-content>
     </ion-card>
-    <ion-list text-wrap class="ContentList">
-      <ion-item (click)="Content()">
-        <p class="ContentListWord">Administrasi Kependudukan</p>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.First=="A"'>
+        <p class="ContentListWord">{{data.Title}}</p>
       </ion-item>
-      <ion-item (click)="Content()">
-        <p class="ContentListWord">Advokasi TKI</p>
-      </ion-item>
-      <ion-item (click)="Content()">
-        <p class="ContentListWord">Ancaman Kekerasan Terhadap TKI</p>
-      </ion-item>
-    </ion-list>
+    </div>
   </div>
 
   <div>
@@ -40,7 +34,12 @@
         <p class="HeaderListWord">B</p>
       </ion-card-content>
     </ion-card>
-    <ion-list text-wrap class="ContentList">
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.First=="B"'>
+        <p class="ContentListWord">{{data.Title}}</p>
+      </ion-item>
+    </div>
+    <!--<ion-list text-wrap class="ContentList">
       <ion-item (click)="Content()">
         <p class="ContentListWord">Bantuan Hukum</p>
       </ion-item>
@@ -50,7 +49,7 @@
       <ion-item (click)="Content()">
         <p class="ContentListWord">Biaya Rekrut TKI</p>
       </ion-item>
-    </ion-list>
+    </ion-list>-->
   </div>
 
 </ion-content>

@@ -3,24 +3,28 @@
         {
             "Id":"1",
             "Title":"Administrasi Kependudukan",
+            "First":"A",
             "Date":"14-02-2016",
             "Category":"Help"            
         },
         {
             "Id":"2",
             "Title":"Advokasi TKI",
+            "First":"A",
             "Date":"14-02-2016",
             "Category":"Help"            
         },
         {
             "Id":"3",
             "Title":"Ancaman Kekerasan Pada TKI",
+            "First":"A",
             "Date":"14-02-2016",
             "Category":"Help"            
         },
         {
             "Id":"4",
             "Title":"BNP2TKI Visi dan Misi",
+            "First":"B",
             "Date":"14-02-2016",
             "Category":"Help"            
         }
