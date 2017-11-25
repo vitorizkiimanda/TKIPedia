@@ -28,14 +28,14 @@
     </div>
   </div>
 
-  <!-- <div>
+  <div>
     <ion-card class="HeaderList">
       <ion-card-content>
         <p class="HeaderListWord">B</p>
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="B"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="B"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
@@ -48,7 +48,7 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="C"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="C"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
@@ -61,7 +61,7 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="D"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="D"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
@@ -74,7 +74,7 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="E"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="E"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
@@ -87,7 +87,7 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="F"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="F"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
@@ -100,7 +100,7 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="G"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="G"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
@@ -113,7 +113,7 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="H"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="H"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
@@ -126,10 +126,231 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="J"'>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="I"&&data.id!=1&&data.id!=2'>
         <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
-  </div> -->
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">J</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="J"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">K</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="K"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">L</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="L"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">M</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="M"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">N</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="N"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">O</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="O"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">P</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="P"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">Q</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="Q"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">R</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="R"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">S</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="S"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">T</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="T"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">U</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="U"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">V</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="V"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">W</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="W"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">X</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="X"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">Y</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="Y"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">Z</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="Z"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
 
 </ion-content>
