@@ -22,8 +22,21 @@
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.First=="A"'>
-        <p class="ContentListWord">{{data.Title}}</p>
+      <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.data[0]=="A"&&data.id!=1&&data.id!=2'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <!-- <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">B</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="B"'>
+        <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
   </div>
@@ -31,25 +44,92 @@
   <div>
     <ion-card class="HeaderList">
       <ion-card-content>
-        <p class="HeaderListWord">B</p>
+        <p class="HeaderListWord">C</p>
       </ion-card-content>
     </ion-card>
     <div *ngFor="let data of list">
-      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.First=="B"'>
-        <p class="ContentListWord">{{data.Title}}</p>
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="C"'>
+        <p class="ContentListWord">{{data.data}}</p>
       </ion-item>
     </div>
-    <!--<ion-list text-wrap class="ContentList">
-      <ion-item (click)="Content()">
-        <p class="ContentListWord">Bantuan Hukum</p>
-      </ion-item>
-      <ion-item (click)="Content()">
-        <p class="ContentListWord">Biaya Penempatan</p>
-      </ion-item>
-      <ion-item (click)="Content()">
-        <p class="ContentListWord">Biaya Rekrut TKI</p>
-      </ion-item>
-    </ion-list>-->
   </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">D</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="D"'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">E</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="E"'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">F</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="F"'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">G</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="G"'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">H</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="H"'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+  <div>
+    <ion-card class="HeaderList">
+      <ion-card-content>
+        <p class="HeaderListWord">I</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngFor="let data of list">
+      <ion-item text-wrap class="ContentList" (click)="Content()" *ngIf='data.data[0]=="J"'>
+        <p class="ContentListWord">{{data.data}}</p>
+      </ion-item>
+    </div>
+  </div> -->
 
 </ion-content>

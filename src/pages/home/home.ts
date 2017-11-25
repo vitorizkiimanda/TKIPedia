@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,LoadingController } from 'ionic-angular';
 import { Http } from '@angular/http';
 
 import { ContentPage } from '../content/content';
@@ -14,8 +14,8 @@ export class HomePage {
 
   constructor(
     public navCtrl: NavController,
-    public http: Http) {
-
+    public http: Http,
+    public loadCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
@@ -23,23 +23,26 @@ export class HomePage {
     this.getData();
   }
 
-  Content() {
-    this.navCtrl.push(ContentPage);
+  Content(data) {
+    console.log(data);
+    this.navCtrl.push(ContentPage, data);
   }
 
   getData() {
-    this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/list-tkipedia.json').subscribe((data) => {
-       let response = data.json();
-       this.list = response.Data;
-       console.log(this.list);
+
+    let loading = this.loadCtrl.create({
+        content: 'memuat..',
+        duration: 1000
     });
+    
+    loading.present(); 
 
-    // this.http.get('http://localhost/Projects/TKIPedia/src/assets/json/search-list.json').subscribe(data => {
-    //   let response = data.json();
-    //   console.log(response);
-    // });
-
-
+    this.http.get('http://tkipedia.ocentrum.com/kriteria').subscribe((data) => {
+       let response = data.json();
+       this.list = response;
+       console.log(this.list);
+       loading.dismiss();
+    });
   }
 
 }
