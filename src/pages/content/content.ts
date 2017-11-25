@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { Http } from '@angular/http';
 
 
@@ -18,7 +18,8 @@ export class ContentPage {
   constructor(
     public navCtrl: NavController,
     public http: Http,
-    public navParams: NavParams) {
+    public navParams: NavParams,
+    public loadCtrl: LoadingController) {
 
       // console.log(this.navParams.data);
       let temp = this.navParams.data;
@@ -43,19 +44,27 @@ export class ContentPage {
 
 
   getData() {
+
+    let loading = this.loadCtrl.create({
+        content: 'memuat..',
+        duration: 1000
+    });
+    
+    loading.present(); 
+
     this.http.get('http://tkipedia.ocentrum.com/info/'+this.id).subscribe((data) => {
       let response = data.json();
        this.content = response;
        console.log(this.content);
+
+       loading.dismiss();
     });
 
     this.http.get('http://tkipedia.ocentrum.com/lampiran/'+this.id).subscribe((data) => {
       let response = data.json();
        this.lampiran = response;
        console.log(this.lampiran);
-    });
-
-   
+    });   
   }
 
 }

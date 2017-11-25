@@ -15,6 +15,15 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+
+@font-face {
+    font-family: Ormont_Light;
+    src: url(../assets/fonts/Hoefler_Text.ttf) format("ttf");
+    font-weight: 200
+}
+    
+
+
 .MenuColor{
     background-color: #0d65ac;
 }
@@ -30,7 +39,8 @@
 }
 
 .MenuTitleFont {
-    font-size: 9vw;
+    font-family: Hoefler_Text !important;
+    font-size: 10vw;
     font-weight: 400;
 }
 
