@@ -15,6 +15,15 @@
     <ion-searchbar (ionInput)="getItems($event)" placeholder="Ketik di sini"></ion-searchbar>
   </div>
 
+  <div [hidden]="search == false">
+      <div *ngFor="let data of list_search">
+        <ion-item text-wrap class="ContentList" (click)="Content(data)" *ngIf='data.id!=1&&data.id!=2'>
+          <p class="ContentListWord">{{data.data}}</p>
+        </ion-item>
+      </div>
+  </div>
+
+<div [hidden]="search == true">
   <div>
     <ion-card class="HeaderList">
       <ion-card-content>
@@ -352,5 +361,6 @@
       </ion-item>
     </div>
   </div>
+</div>
 
 </ion-content>
