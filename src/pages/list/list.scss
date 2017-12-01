@@ -1,3 +1,52 @@
 page-list {
+    .youngblue {
+        background-color: #4993cf;
+    }
 
+    p {
+        color: white;
+    }
+    li {
+        color: white;
+    }
+
+    a {
+        color: #052e56;
+        text-decoration: underline;
+        margin-left: 2vw;;
+    }
+
+    .Title {
+        color: #4993cf;
+        font-size: 3vh;
+
+        width: 60%;
+        word-wrap: break-word;
+    }
+
+    .button-inner{
+        color: #4993cf;
+    }
+
+    .Header{
+        font-size: 3vh;
+    }
+
+    .Content{
+        font-size: 2vh;
+    }
+
+    .Footer{
+        font-size: 2vh;
+    }
+
+    .ButtonWordWhite {
+        font-size: 2vh;
+        color: white;
+        text-transform: capitalize;
+	}
+    .ButtonFAQ {
+        margin-top: 2vh;
+        height: 6vh !important;
+    }
 }

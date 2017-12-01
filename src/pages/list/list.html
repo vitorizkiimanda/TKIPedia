@@ -1,23 +1,166 @@
-<ion-header>
+<ion-header text-wrap>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button text-wrap ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title><div class="Title">Frequently Asked Question</div></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+<ion-content padding text-wrap class="youngblue">
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest1()'><p class="ButtonWordWhite">Ingin menjadi TKI ?</p></button>
   </div>
-</ion-content>
+  <div class="Content" [hidden]="quest1 == false">
+    <p>Ikuti prosedur menjadi TKI yang sesuai dengan undang-undang sebagai berikut :</p>
+    <ol>
+      <li>Datang dan tanyakan kepada Pejabat Dinas Nakertrans Kabupaten /Kota terdekat untuk memperoleh informasi tentang PPTKIS yang resmi /ilegal</li>
+      <li>Datang dan diskusi dengan pengurus PPTKIS sesuai dengan informasi dari Nakertrans Kabupaten /Kota</li>
+      <li>Ikuti penyuluhan yang dilaksanakan oleh petugas BNP2TKI , BP3TKI , UPT-P3TKI Surabaya , LP3TKI, PPTKIS dan Disnakertrans Kab/Kota.</li>
+      <li>Daftarkan diri di Dinas Nakertrans Kabupaten /Kota terdekat sesuai dengan status kependudukan.</li>
+      <li>Ikuti proses seleksi yang dilaksanakan oleh PPTKIS dan Dinas Nakertrans /Kota</li>
+      <li>Tandatangani Perjanjian Penempatan dengan PPTKIS yang disahkan oleh Dinas Nakertrans Kabupaten /Kota</li>
+      <li>Pastikan bahwa hak dan kewajiban para pihak dicantumkan secara jelas dalam perjanjian kerja.</li>
+      <li>Pahami isi dan tandatangani Perjanjian Kerja yang telah disahkan oleh Perwakilan RI di Negara Penempatan</li>
+      <li>Ikuti Pembekalan Akhir Pemberangkatan (PAP) dari BNP2TKI</li>
+      <li>Miliki Kartu Tenaga Kerja LuarNegeri (KTKLN) yang diperoleh secara GRATIS di BP3TKI, LP3TKI,P4TKI, dan UPT P3TKI di Surabaya</li>
+      <li>Lapor ke Perwakilan RI setibanya di Negara Penempatan</li>
+      <li>Setelah Kontrak Kerja berakhir, kembali ke tanah air dan lapor ke petugas BNP2TKI di Bandara /Pelabuhan kedatangan</li>
+    </ol>
+  </div>
+
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest2()'><p class="ButtonWordWhite">Syarat CTKI /TKI</p></button>
+  </div>
+  <div class="Content" [hidden]="quest2 == false">
+      <p>Pencari kerja yang berminat untuk bekerja diluar negeri harus mendaftarkan diri atau di daftarkan pada Instansi Kabupaten /Kota dengan persyaratan :</p>
+      <ol>
+        <li>Berusia sekurang-kurangnya 18 tahun  , kecuali bagi calon TKI yang dipekerjakan pada pengguna perorangan /rumah tangga sekurang-kurangnya berusia 21 tahun</li>
+        <li>Sehat jasmani dan rohani</li>
+        <li>Memiliki keterampilan</li>
+        <li>Tidak dalam keadaan hamil (TKI perempuan)</li>
+        <li>Calon TKI terdaftar di Dinas Tenaga Kerja setempat Memiliki dokumen lengkap</li>
+      </ol>
+  </div>
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest3()'><p class="ButtonWordWhite">Bagaimana Menjadi TKI yang aman?</p></button>
+  </div>
+  <div class="Content" [hidden]="quest3 == false">
+      <ol>
+        <li>Carilah PPTKIS yang resmi / Legal</li>
+        <li>Ikuti penyuluhan oleh petugas BNP2TKI, BP3TKI, UPT-P3TKI Surabaya , LP3TKI, P4TKI, PPTKIS dan Disnaker Kabupaten / Kota</li>
+        <li>Mendaftar di Disnaker Kabupaten /Kota</li>
+        <li>Ikuti proses seleksi yang dilakukan oleh PPTKIS dan Disnaker Kabupaten /Kota</li>
+        <li>Menandatangani perjanjian penempatan dengan PPTKIS yang disahkan oleh Disnakertrans Kabupaten/Kota</li>
+        <li>Pastikan mendapat asuransi ,pendidikan  dan pelatihan mendapat Paspor dan Visa Kerja</li>
+        <li>Pahami isi dan tandatangani perjanjian kerja yang telah disahkan oleh Perwakilan RI</li>
+        <li>Wajib mengikuti Pembekalan Akhir Pemberangkatan (PAP) dari BP3TKIWajib mengikuti Pembekalan Akhir Pemberangkatan (PAP) dari BP3TKI</li>
+        <li>Wajib memiliki Kartu Tenaga Kerja Luar Negeri (KTKLN) yang diperoleh secara GRATIS di BNP2TKI /BP3TKI/LP3TKI/P4TKI</li>
+        <li>Lapor ke Perwakilan RI setelah tiba di Negara penempatan</li>
+        <li>Setelah Kontrak Kerja berakhir , kembali ke tanah air dan lapor ke petugas BP3TKI di bandara /Pelabuhan</li>
+      </ol>
+  </div>
+
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest4()'><p class="ButtonWordWhite">Apa itu TKI ilegal?</p></button>
+  </div>
+  <div class="Content" [hidden]="quest4 == false">
+      <p>Warga negara indonesia yang bekerja ke luar negeri melalui prosedur penempatan TKI yang tidak benar (NON PROSEDURAL) . prosedur Penempatan TKI yang TIDAK BENAR<br /> ( NON PROSEDURAL) antara lain :</p>
+      <ul>
+        <li>Memalsukan dokumen dan memanipulasi data diri calon TKI</li>
+        <li>Mengabaikan prosedur dan mekanisme penempatan TKI yang telah diatur oleh undang-undang dan ketentuan hukum yang berlaku</li>
+      </ul>
+  </div>
+
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest5()'><p class="ButtonWordWhite">Syarat menjadi TKI Korea dengan program G to G ?</p></button>
+  </div>
+  <div class="Content" [hidden]="quest5 == false">
+      <ol>
+        <li>Lulus tes EPS TOPIK, dengan melampirkan foto copy sertifikat EPS TOPIK.</li>
+        <li>Tidak sedang dicekal dicekal pergi ke luar negeri.</li>
+        <li>Tidak pernah di deportasi dari negara Korea/ilegal stay.</li>
+        <li>Tidak mempunyai catatan kriminal dan tidak pernah dihukum atau dipenjara.</li>
+        <li>Mengisi formulir pendaftaran dengan jelas dan benar.</li>
+        <li>Foto copy KTP usia 18 -39 tahun.</li>
+        <li>Foto copy Kartu Keluarga</li>
+        <li>Foto copy ijasah pendidikan formal serendah-rendahnya lulusan SLTP atau sederajat.</li>
+        <li>Foto copy paspor yang masih berlaku</li>
+        <li>Pas foto terbaru berwarna ukuran 3 X 4 cm sebanyak 2 lembar.</li>
+        <li>Asli surat keterangan catatan kepolisian (SKCK)</li>
+        <li>Asli sertifikat hasil pemeriksaan kesehatan (medical check up).</li>
+        <li>Asli bukti pendaftaran pencari kerja (AK I) dari dinas yang menangani bidang ketenagakerjaan.</li>
+        <li>Asli surat ijin dari Suami/isteri/Orang tua atau wali diatas meterai Rp. 6000,- diketahui lurah atau kepala desa.</li>
+      </ol>
+  </div>
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest6()'><p class="ButtonWordWhite">Apa Resiko Menjadi TKI Ilegal ?</p></button>
+  </div>
+  <div class="Content" [hidden]="quest6 == false">
+      <p>Menjadi TKI ilegal sangat merugikan bagi TKI , karena beresiko antara lain :</p>
+      <ul>
+        <li>Sponsor /PPTKIS atau orang yang menjanjikan pekerjaan dapat melarikan uang yang disetor oleh calon TKI</li>
+        <li>TKI ilegal tidak aman, karena tidak mendapat jaminan perlindungan di negara penempatan</li>
+        <li>TKI ilegal diperlakukan tidak manusiawi mulai dari penampungan sampai ke luar negeri</li>
+        <li>TKI ilegal menerima gaji sangat rendah bahkan ada yang tidak dibayar</li>
+        <li>TKI ilegal diperlakukan tidak manusiawi dan dibatasi hak-haknya oleh majikan</li>
+        <li>TKI ilegal selalu was was , khawatir ditangkap oleh aparat keamanan negara setempat</li>
+        <li>TKI ilegal jika tertangkap aparat keamanan negara setempat akan dipenjara dan dipulangkan paksa (deportasi)</li>
+        <li>TKI ilegal tidak mendapat jaminan asuransi jika mengalami sakit, musibah, kecelakaan dan kematian</li>
+      </ul>
+  </div>
+
+   
+
+  <div text-center >
+    <button class='ButtonFAQ' text-wrap text-wrap ion-button block color="tkipedia" (click)='Quest7()'><p class="ButtonWordWhite">Lowongan PPTKIS melalui jobs info penuh dan ada calon TKI mendaftar</p></button>
+  </div>
+  <div class="Content" [hidden]="quest7 == false">
+      <p>Untuk saat ini, jumlah ketersediaan lowongan belum secara otomatis terupdate ke Dinas Kab/Kota, jadi kuota lowongan belum bisa berkurang secara otomatis. Namun, CTKI yang sudah mendaftar tersebut tetap berada di databased dan bisa berkesematan untuk matching dengan lowongan yang tersedia lainnya.<br /><br />Dalam pengembangannya kedepan, jumlah ketersediaan lowongan akan berkurang secara otomatis jika PPTKIS sudah mendaftarkan kandidat yang dimiliki di Dinas Kab/Kota. Jadi semua lowongan yang publish di Jobsinfo masih terbuka.</p>
+  </div>
+
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest8()'><p class="ButtonWordWhite">Nama di Paspor berbeda dengan daftar nama yg dikeluarkan BNP2TKI</p></button>
+  </div>
+  <div class="Content" [hidden]="quest8 == false">
+      <p>Jika kontrak kerja (SLC) belum dikeluarkan oleh HRD Korea, maka datang langsung ke Kantor BNP2TKI untuk lapor data, namun jika Convirmation Certificate of Visa Issuance (CCVI) telah diterbitkan oleh HRD Korea, maka Paspor harus di Revisi.</p>
+  </div>
+
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest9()'><p class="ButtonWordWhite">Masalah yang sering terjadi terhadap TKI informal khususnya PLRT</p></button>
+  </div>
+  <div class="Content" [hidden]="quest9 == false">
+      <p>Pemerintah telah menyediakan website Jobs Info <a href="http://jobsinfo.bnp2tki.go.id/portal/">http://jobsinfo.bnp2tki.go.id/portal/</a> yang mana di bagian profile pada web tersebut menyediakan link yang digunakan setiap orang di dunia dalam mengetahui soal bahasa yang bisa digunakan maupun budaya pada negara tersebut. Terkait dengan nilai mata uang telah disediakan data tentang standar biaya di negara tujuan penempatan (seluruh dunia) <a href="http://www.numbeo.com/cost-of-living/">http://www.numbeo.com/cost-of-living/</a> atau <a href="http://www.xpatulator.com/cost-of-living-article/International-Cost-of-Living-October-2013_490.cfm">http://www.xpatulator.com/cost-of-living-article/International-Cost-of-Living-October-2013_490.cfm</a>  sebagai acuan dan informasi bagi TKI.</p>
+  </div>
+
+   
+
+  <div text-center>
+    <button class='ButtonFAQ' text-wrap ion-button block color="tkipedia" (click)='Quest10()'><p class="ButtonWordWhite">Mengapa Bisa Terjadi Trafficking?</p></button>
+  </div>
+  <div class="Content" [hidden]="quest10 == false">
+      <p>Trafficking terjadi karena :</p>
+      <ul>
+        <li>Tingginya arus TKI ilegal sehingga mereka dibayar murah</li>
+        <li>TKI tidak dibayar gajinya</li>
+        <li>Pembebanan biaya penempatan terlalu tinggi / tidak sesuai ketentuan</li>
+      </ul>
+  </div>
+  
+  
+  </ion-content>
