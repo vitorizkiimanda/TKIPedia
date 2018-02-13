@@ -62,9 +62,6 @@ export class HomePage {
       this.list_search = this.list_search.filter((item) => {
         return (item.data.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
-      // this.list_search = this.list_search.filter((data) => {
-      //   return (data.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      // })
     }
     else {
       this.search=false;
